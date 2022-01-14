@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Logo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f7f7f7;
+      }
+
+      .logo {
+        height: 200px;
+        width: 200px;
+        border-radius: 60px;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0% 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .square {
+        width: 160px;
+        height: 160px;
+        background-color: transparent;
+        border: 12px solid white;
+        border-radius: 45px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle-big {
+        height: 80px;
+        width: 80px;
+        background-color: transparent;
+        border: 12px solid white;
+        border-radius: 50%;
+      }
+      .circle-small {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <div class="square">
+        <div class="circle-big"></div>
+        <div class="circle-small"></div>
+      </div>
+    </div>
+  </body>
+</html>

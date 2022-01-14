@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .panda {
+        width: 320px;
+        height: 320px;
+        background-color: white;
+        border: 12px solid black;
+        border-radius: 50%;
+        position: relative;
+      }
+      .eye-left {
+        position: absolute;
+        width: 115px;
+        height: 58px;
+        background-color: black;
+        left: 10px;
+        top: 45%;
+        border-radius: 0 0 115px 115px;
+        transform: rotate(30deg);
+        overflow: hidden;
+      }
+      .left-ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -50%;
+        left: 32%;
+        border-radius: 50%;
+        background-color: black;
+        border: 12px solid white;
+      }
+
+      .eye-right {
+        position: absolute;
+        width: 115px;
+        height: 58px;
+        background-color: black;
+        right: 10px;
+        top: 45%;
+        border-radius: 0 0 115px 115px;
+        transform: rotate(-30deg);
+        overflow: hidden;
+      }
+      .right-ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -50%;
+        right: 32%;
+        border-radius: 50%;
+        background-color: black;
+        border: 12px solid white;
+      }
+      .nose {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        border-radius: 50%;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .mouth {
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        background-color: black;
+        border-radius: 10px;
+        top: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .ear-left {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        border-radius: 50%;
+        top: -30px;
+        left: -35px;
+        z-index: -1;
+      }
+      .ear-right {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        border-radius: 50%;
+        top: -30px;
+        right: -35px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panda">
+      <div class="eye-left">
+        <div class="left-ball"></div>
+      </div>
+      <div class="eye-right">
+        <div class="right-ball"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+      <div class="ear-left"></div>
+      <div class="ear-right"></div>
+    </div>
+  </body>
+</html>
