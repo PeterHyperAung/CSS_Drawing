@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watermelon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        background-color: #69506d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .watermenlon {
+        width: 300px;
+        height: 160px;
+        background-color: #fd6c64;
+        border-left: 20px solid #4af5b6;
+        border-bottom: 20px solid #4af5b6;
+        border-right: 20px solid #4af5b6;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+      }
+      span {
+        width: 10px;
+        height: 10px;
+        background-color: #262626;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 20px;
+      }
+      span:nth-child(7),
+      span:nth-child(12),
+      span:nth-child(13),
+      span:nth-child(14) {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="watermenlon">
+      <span></span><span></span><span></span><span></span><span></span
+      ><span></span><span></span><span></span><span></span><span></span
+      ><span></span><span></span><span></span><span></span><span></span
+      ><span></span>
+    </div>
+  </body>
+</html>
